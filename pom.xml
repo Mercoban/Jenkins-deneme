@@ -17,7 +17,7 @@
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>3.7.1</version>
+            <version>5.0.2</version>
             <!--            <scope>test</scope>-->
         </dependency>
 
@@ -30,7 +30,7 @@
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
-            <version>4.0.1</version>
+            <version>5.0.0</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
@@ -49,10 +49,12 @@
         </dependency>
 
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>1.7.21</version>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-core</artifactId>
+            <version>4.7.4</version>
+            <scope>test</scope>
         </dependency>
+
 
     </dependencies>
 
@@ -110,7 +112,7 @@
 
                             <parallel>methods</parallel>
                             <perCoreThreadCount>false</perCoreThreadCount>
-                            <threadCountMethods>4</threadCountMethods>
+                            <threadCountMethods>10</threadCountMethods>
 
                             <includes>
                                 <include>**/RegressionRunner.java</include>
